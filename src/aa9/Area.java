@@ -1,0 +1,7 @@
+
+package aa9;
+
+
+public enum Area {
+    MENAGER, EDITOR,GRAPHIC_ILUSTRATOR,TECHNICAL_WRITER
+}
