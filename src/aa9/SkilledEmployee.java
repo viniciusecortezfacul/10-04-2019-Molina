@@ -35,11 +35,16 @@ public abstract class SkilledEmployee extends Employee {
        }
        return result;
    }
-   public String localizarSkills( String loc) {
+   public String localizarSkill( String loc) {
        for(Skill a : this.skills){
            if(a.toString().endsWith(loc)) return a.toString();
        }
        return null;
+   }
+   
+   public void removerSkills(String loc){
+       String removida = localizarSkill(loc);
+       this.skills.remove(removida); 
    }
   
    
