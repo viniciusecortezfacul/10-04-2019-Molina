@@ -45,6 +45,10 @@ public abstract class Employee {
         return horasTrabalhadas;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public Area getAreaTrabalhada() {
         return areaTrabalhada;
     }
@@ -55,12 +59,18 @@ public abstract class Employee {
     
     
     public String toString(){
-        return name;
+        return "Nome: "+ this.name + "\n"+
+               "ID: " + this.id + "\n" + 
+               "Área Trabalhada: " + this.areaTrabalhada + "\n"+
+               "Horas Trabalhadas: "+ this.horasTrabalhadas ;
+               
     }
-    
+      
     public boolean equals(Employee e){
         return (e.id == this.id);
     }
+    
+    
     
     
     
