@@ -32,9 +32,7 @@ public abstract class Employee {
        this(name, a);
        this.horasTrabalhadas = horas;
    }
-    
-    
-    
+   
     public String getName() {
         return name;
     }
@@ -56,6 +54,13 @@ public abstract class Employee {
     }
     
     
+    public String toString(){
+        return name;
+    }
+    
+    public boolean equals(Employee e){
+        return (e.id == this.id);
+    }
     
     
     
